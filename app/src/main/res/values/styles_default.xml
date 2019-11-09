@@ -1,0 +1,91 @@
+<resources>
+
+    <style name="Theme.Custom" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/default_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/default_colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/default_colorOnPrimary</item>
+
+        <item name="colorSecondary">@color/default_colorSecondary</item>
+        <item name="colorOnSecondary">@color/default_colorOnSecondary</item>
+
+        <item name="colorSurface">@color/default_colorSurface</item>
+        <item name="colorOnSurface">@color/default_colorOnSurface</item>
+
+        <item name="android:colorBackground">@color/default_colorBackground</item>
+
+        <!-- Global widgets styles -->
+        <item name="materialButtonStyle">@style/Widget.Custom.Button</item>
+        <item name="appBarLayoutStyle">@style/Widget.MaterialComponents.AppBarLayout.Surface</item>
+        <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.Surface</item>
+
+        <!-- Custom attributes -->
+        <item name="colorToolbar">@color/default_colorSurface</item>
+        <item name="colorOnToolbar">@color/default_colorOnSurface</item>
+
+        <!-- Fonts -->
+        <item name="fontFamily">?fontMedium</item>
+        <item name="fontExtraLight">@font/athiti_extralight</item>
+        <item name="fontLight">@font/athiti_light</item>
+        <item name="fontRegular">@font/athiti_regular</item>
+        <item name="fontMedium">@font/athiti_medium</item>
+        <item name="fontSemiBold">@font/athiti_semibold</item>
+        <item name="fontBold">@font/athiti_bold</item>
+    </style>
+
+    <style name="ThemeOverlay.Form" parent="">
+        <item name="textInputStyle">@style/Widget.Custom.TextInputLayout.NoHint</item>
+    </style>
+
+    <!-- All buttons in the app should have rounded corners -->
+    <style name="Widget.Custom.Button" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Custom.Button</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Custom.Button" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- All TextInputLayouts should have filled background -->
+    <style name="Widget.Custom.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+    </style>
+
+    <!--region TextInputLayout variant that centers the text vertically and shifts hint a bit upwards upwards -->
+    <style name="Widget.Custom.TextInputLayout.NoHint">
+        <item name="boxCollapsedPaddingTop">4dp</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Custom.TextInputEditText.FilledBox.NoHint</item>
+    </style>
+
+    <style name="ThemeOverlay.Custom.TextInputEditText.FilledBox.NoHint" parent="ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="editTextStyle">@style/Widget.Custom.TextInputEditText.FilledBox.NoHint</item>
+    </style>
+
+    <style name="Widget.Custom.TextInputEditText.FilledBox.NoHint" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+    <!--endregion-->
+
+    <style name="ThemeOverlay.Custom.Toolbar" parent="" >
+        <item name="colorPrimary">?colorToolbar</item>
+        <item name="colorOnPrimary">?colorOnToolbar</item>
+        <item name="colorControlNormal">?colorOnToolbar</item>
+        <item name="actionMenuTextColor">?colorOnToolbar</item>
+    </style>
+
+    <style name="ThemeOverlay.Custom.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="ThemeOverlay.Custom.Chip.Full" parent="">
+        <item name="chipStyle">@style/Widget.Custom.Chip.Full</item>
+    </style>
+
+    <style name="Widget.Custom.Chip.Full" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textColor">@color/full_chip_text_color_selector</item>
+        <item name="chipBackgroundColor">@color/full_chip_background_tint_selector</item>
+        <item name="chipStrokeColor">@color/full_chip_stroke_color_selector</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">24dp</item>
+        <item name="chipMinHeight">48dp</item>
+    </style>
+
+</resources>

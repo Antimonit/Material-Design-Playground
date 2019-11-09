@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_colorPrimary">#4CAF50</color>
+    <color name="default_colorPrimaryDark">#388E3C</color>
+    <color name="default_colorOnPrimary">#FFFFFF</color>
+
+    <color name="default_colorSecondary">#FFA000</color>
+    <color name="default_colorOnSecondary">#000000</color>
+
+    <color name="default_colorSurface">#D6FFFFFF</color>
+    <color name="default_colorOnSurface">#E6000000</color>
+
+    <color name="default_colorBackground">#FFFFFF</color>
+</resources>

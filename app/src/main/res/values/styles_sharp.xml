@@ -1,0 +1,54 @@
+<resources>
+
+    <style name="Theme.Sharp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/sharp_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/sharp_colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/sharp_colorOnPrimary</item>
+
+        <item name="colorSecondary">@color/sharp_colorSecondary</item>
+        <item name="colorOnSecondary">@color/sharp_colorOnSecondary</item>
+
+        <item name="colorSurface">@color/sharp_colorSurface</item>
+        <item name="colorOnSurface">@color/sharp_colorOnSurface</item>
+
+        <item name="android:colorBackground">@color/sharp_colorBackground</item>
+
+        <!-- Global widgets styles -->
+        <item name="textInputStyle">@style/Widget.Custom.TextInputLayout.Cornered</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Sharp.SmallComponent</item>
+        <item name="appBarLayoutStyle">@style/Widget.MaterialComponents.AppBarLayout.Primary</item>
+        <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.Primary</item>
+
+        <!-- Custom attributes -->
+        <item name="colorToolbar">@color/sharp_colorPrimary</item>
+        <item name="colorOnToolbar">@color/sharp_colorOnPrimary</item>
+
+        <!-- Fonts -->
+        <item name="fontFamily">?fontRegular</item>
+        <item name="fontExtraLight">sans-serif-thin</item>
+        <item name="fontLight">sans-serif-light</item>
+        <item name="fontRegular">sans-serif</item>
+        <item name="fontMedium">sans-serif-medium</item>
+        <item name="fontSemiBold">sans-serif-black</item>
+        <item name="fontBold">sans-serif-black</item>
+    </style>
+
+    <style name="ShapeAppearance.Sharp.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <!--region TextInputLayout variant that has much bigger top right corner radius -->
+    <style name="Widget.Custom.TextInputLayout.Cornered" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Custom.TextInputLayout.Cornered</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Custom.TextInputLayout.Cornered" parent="">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">24dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+    <!--endregion-->
+
+</resources>

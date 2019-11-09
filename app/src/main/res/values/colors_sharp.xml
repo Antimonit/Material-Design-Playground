@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sharp_colorPrimary">#E91E1E</color>
+    <color name="sharp_colorPrimaryDark">#C21818</color>
+    <color name="sharp_colorOnPrimary">#FFFFFF</color>
+
+    <color name="sharp_colorSecondary">#2196F3</color>
+    <color name="sharp_colorOnSecondary">#000000</color>
+
+    <color name="sharp_colorSurface">#FFFFFF</color>
+    <color name="sharp_colorOnSurface">#E6000000</color>
+
+    <color name="sharp_colorBackground">#FFFFFF</color>
+</resources>

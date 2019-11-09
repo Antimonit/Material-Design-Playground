@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="TextAppearance.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0.0</item>
+    </style>
+
+    <style name="TextAppearance.Body.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Body.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Body.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/content_scroll_view"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="@dimen/form_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:padding="16dp" >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            app:startIconDrawable="@drawable/ic_person_black_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthday_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Birthday"
+            app:startIconDrawable="@drawable/ic_cake_black_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/birthday_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="64dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            >
+
+            <include layout="@layout/transaction"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp"/>
+
+        <include layout="@layout/widgets"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="120dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_number_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Phone number"
+            app:startIconDrawable="@drawable/ic_phone_black_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_number_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Additional padding to accommodate bottom app bar -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

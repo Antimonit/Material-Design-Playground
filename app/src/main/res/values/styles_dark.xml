@@ -1,0 +1,35 @@
+<resources>
+
+    <style name="Theme.Custom.Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/default_dark_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/default_dark_colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/default_dark_colorOnPrimary</item>
+
+        <item name="colorSecondary">@color/default_dark_colorSecondary</item>
+        <item name="colorOnSecondary">@color/default_dark_colorOnSecondary</item>
+
+        <item name="colorSurface">@color/default_dark_colorSurface</item>
+        <item name="colorOnSurface">@color/default_dark_colorOnSurface</item>
+
+        <item name="android:colorBackground">@color/default_dark_colorBackground</item>
+
+        <!-- Global widgets styles -->
+        <item name="materialButtonStyle">@style/Widget.Custom.Button</item>
+        <item name="appBarLayoutStyle">@style/Widget.MaterialComponents.AppBarLayout.Surface</item>
+        <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.Surface</item>
+
+        <!-- Custom attributes -->
+        <item name="colorToolbar">@color/default_dark_colorSurface</item>
+        <item name="colorOnToolbar">@color/default_dark_colorOnSurface</item>
+
+        <!-- Fonts -->
+        <item name="fontFamily">?fontRegular</item>
+        <item name="fontExtraLight">@font/athiti_extralight</item>
+        <item name="fontLight">@font/athiti_light</item>
+        <item name="fontRegular">@font/athiti_regular</item>
+        <item name="fontMedium">@font/athiti_medium</item>
+        <item name="fontSemiBold">@font/athiti_semibold</item>
+        <item name="fontBold">@font/athiti_bold</item>
+    </style>
+
+</resources>

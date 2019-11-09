@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_dark_colorPrimary">#439C44</color>
+    <color name="default_dark_colorPrimaryDark">#296629</color>
+    <color name="default_dark_colorOnPrimary">#000000</color>
+
+    <color name="default_dark_colorSecondary">#D88200</color>
+    <color name="default_dark_colorOnSecondary">#FFFFFF</color>
+
+    <color name="default_dark_colorSurface">#D6292929</color>
+    <color name="default_dark_colorOnSurface">#E6FFFFFF</color>
+
+    <color name="default_dark_colorBackground">#000000</color>
+</resources>
