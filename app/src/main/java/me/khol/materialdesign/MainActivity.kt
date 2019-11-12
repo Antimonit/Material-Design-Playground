@@ -6,6 +6,7 @@ import android.graphics.Paint
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ArrayAdapter
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.chip.Chip
@@ -35,7 +36,13 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        birthday_text_input_layout.isEnabled = false
+        birthday_edit_text.setAdapter(
+            ArrayAdapter(
+                this,
+                R.layout.support_simple_spinner_dropdown_item,
+                listOf("Camel", "Elephant", "Seal")
+            )
+        )
 
         toolbar.background = MaterialShapeDrawable().apply {
             paintStyle = Paint.Style.FILL

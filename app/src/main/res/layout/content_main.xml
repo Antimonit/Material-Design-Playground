@@ -39,9 +39,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="Birthday"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             app:startIconDrawable="@drawable/ic_cake_black_24dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <AutoCompleteTextView
                 android:id="@+id/birthday_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
